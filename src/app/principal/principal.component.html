@@ -1,0 +1,30 @@
+<dir class="row">
+  <div class="col-6">
+    <h3>ngif</h3>
+    <div *ngIf = "ocultar" class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    <button (click)="ocultar = !ocultar" class="btn btn-outline-primary">Ocultar</button>
+    <hr>
+  </div>
+  <div class="col-6">
+      <h3>ngfor</h3>
+      <hr>
+
+      <ul class="list-group">
+
+          <li *ngFor = "let heroe of heroes"  class="list-group-item">
+              {{heroe}}
+          </li>
+          
+        </ul>
+
+  </div>
+
+</dir>
+
+{{heroes}}
